@@ -698,6 +698,12 @@
   min-width: 3ch;
   text-align: center;
 }
+/* Narrow windows: keep the top bar to two rows; the dot still shows the active state */
+@media (max-width: 1100px) {
+  .kio-status-pill .kio-pill-tags {
+    display: none;
+  }
+}
 .kio-status-pill .kio-pill-tag.lit {
   color: #7ea89a;
   border-color: rgba(126, 168, 154, 0.45);
